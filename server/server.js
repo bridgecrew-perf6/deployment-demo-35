@@ -11,6 +11,8 @@ app.use(express.json())
 //.use means middleward
 app.use(express.static(path.join(__dirname, "../public")))
 
+app.use("/styles", express.static(path.join( __dirname, "../public/index.css")))
+
 //Endpoints
 // app.get('/', function(req, res) {
 //     res.sendFile(path.join(__dirname, '../public/index.html'))
